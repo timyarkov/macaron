@@ -22,3 +22,15 @@ class CUEExpectationError(MacaronError):
 
 class CUERuntimeError(MacaronError):
     """Happens when there are errors in CUE expectation validation."""
+
+
+class ConfigurationError(MacaronError):
+    """Happens when there is an error in the configuration (.ini) file."""
+
+
+class CloneError(MacaronError):
+    """Happens when cannot clone a git repository."""
+
+
+class RepoCheckOutError(MacaronError):
+    """Happens when there is an error when checking out the correct revision of a git repository."""
